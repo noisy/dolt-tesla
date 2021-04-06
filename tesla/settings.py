@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'data',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +75,15 @@ WSGI_APPLICATION = 'tesla.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': { # dolt
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tesla',
+        'USER': 'tesla',
+        'PASSWORD': '123456',
+        'HOST': 'mysql',
+        'PORT': '3306',
+    },
+    'dolt': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tesla',
         'USER': 'root',
@@ -82,16 +91,12 @@ DATABASES = {
         'HOST': 'dolt',
         'PORT': '3306',
     },
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'tesla',
-    #     'USER': 'tesla',
-    #     'PASSWORD': '123456',
-    #     'HOST': 'mysql',
-    #     'PORT': '3306',
-    # },
 }
 
+
+DATABASE_ROUTERS = [
+    'tesla.dbrouter.DjangoRouter',
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
