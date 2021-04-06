@@ -74,14 +74,22 @@ WSGI_APPLICATION = 'tesla.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': { # dolt
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tesla',
-        'USER': 'tesla',
-        'PASSWORD': '123456',
-        'HOST': 'db',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'dolt',
         'PORT': '3306',
-    }
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'tesla',
+    #     'USER': 'tesla',
+    #     'PASSWORD': '123456',
+    #     'HOST': 'mysql',
+    #     'PORT': '3306',
+    # },
 }
 
 
