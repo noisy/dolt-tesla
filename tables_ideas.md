@@ -1,0 +1,22 @@
+- deliveries
+  - by country
+    - germany: https://twitter.com/alex_avoigt/status/1379772841344827395/photo/1
+
+- factset consensus
+- competition: http://ev-sales.blogspot.com/2021/03/global-top-20-february-2021.html#comment-form
+- Elon Musk Tweets
+- Elon Promises/Projections
+- Tesla Energy deployment
+- Tesla Model Prices
+- Tesla Software updates
+- Tesla Superchargers
+- Referrals
+- Earnings
+- solar deployments
+- employee couts
+- job offers
+- tesla sec filings
+- Gordon on Tesla
+- Chanos on Tesla
+- Tesla 2nd stock offerings
+- Tesla Deaths: https://www.tesladeaths.com/
