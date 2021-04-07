@@ -15,8 +15,10 @@ class Command(BaseCommand):
             reader = csv.reader(csv_file)
             next(reader, None)  # skip the headers
             for row in reader:
-                sp = StockPrice.objects.get_or_create(date=row[DATE], defaults={
+                stock_price, created = StockPrice.objects.get_or_create(date=row[DATE], defaults={
                     'open': Decimal(row[OPEN]),
                     'close': Decimal(row[CLOSE]),
                     'volume': int(row[VOLUME], 10),
                 })
+                if created:
+                    print(stock_price)
