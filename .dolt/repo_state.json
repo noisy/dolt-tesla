@@ -1,0 +1,17 @@
+{
+  "head": "refs/heads/master",
+  "staged": "ksnsrcorn2urfnmrp19bbktmpgn520dk",
+  "working": "ksnsrcorn2urfnmrp19bbktmpgn520dk",
+  "merge": null,
+  "remotes": {
+    "origin": {
+      "name": "origin",
+      "url": "https://doltremoteapi.dolthub.com/noisy/tesla",
+      "fetch_specs": [
+        "refs/heads/*:refs/remotes/origin/*"
+      ],
+      "params": {}
+    }
+  },
+  "branches": {}
+}
