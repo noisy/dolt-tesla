@@ -2,12 +2,8 @@ class DjangoRouter:
     django_apps_labels = {'admin', 'auth', 'contenttypes', 'sessions'}
 
     def get_db(self, label):
-        print("app_label: ", label)
         if label in self.django_apps_labels:
-            print("DB:default")
             return 'default'
-
-        print("DB:dolt")
         return 'dolt'
 
     def db_for_read(self, model, **hints):
