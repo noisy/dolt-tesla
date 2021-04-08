@@ -14,3 +14,4 @@ class DeliveriesGlobalByQuarter(Model):
     models = TextField()
     units = IntegerField()
     information_source = ForeignKey(InformationSource, null=True, default=None, on_delete=CASCADE)
+    notes = TextField(null=True, default=None, blank=True)
